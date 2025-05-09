@@ -1,0 +1,20 @@
+name: Create Release
+on: 
+  push:
+    branches: [master]
+  workflow_dispatch:
+    
+jobs:
+  unload-from-folder:
+    runs-on: unbuntu-latest
+    steps:
+      - name: Commiting to page branch
+        uses: EndBug/add-and-commit@v9
+        with:
+          commit: --force
+          cwd: ./unoffical-sponge-documentation
+          default_author: github_actions
+          new_branch: pages
+          pathspec_error_handling: exitImmediately
+          
+  
