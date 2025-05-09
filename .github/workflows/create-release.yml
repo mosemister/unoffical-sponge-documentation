@@ -14,9 +14,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - name: moves files out of folder
-        run: mv ~/unoffical-sponge-documentation ~/
+        run: mv ./unoffical-sponge-documentation ./
       - name: removes original folder
-        run: rm -r ~/unoffical-sponge-documentation
+        run: rm -r ./unoffical-sponge-documentation
       - name: Commiting to page branch
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
