@@ -15,11 +15,10 @@ const onSidebarClick = () => {
 
 const insertSidebar = async () => {
     const sidebar = document.getElementById("sidebar")
-    const sidebarChild = sidebar.children[0]
 
     const result = await fetch("/unoffical-sponge-documentation/sidebar.html")
     const text = await result.text();
-    sidebarChild.innerHTML = text;
+    sidebar.innerHTML = text;
     sidebar.classList.add("sidebar-closed")
 }
 
