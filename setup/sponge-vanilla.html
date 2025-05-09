@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>Unoffical Documentation</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/sidebar.js"></script>
+</head>
+
+<body onload="onSidebarLoad()">
+    <div id="header" class="flex-even sidebar-yellow">
+        <h1>Unoffical Sponge documentation</h1>
+        <h2>Sponge Vanilla Setup</h2>
+    </div>
+    <div class="flex full-main-height">
+        <div id="sidebar" class="sidebar-background">
+            <div></div>
+        </div>
+        <div id="main">
+            <h3>Quick start guide</h3>
+            <p>This is a step by step reference on how to create a Minecraft server with Sponge Vanilla version 7 and
+                above</p>
+            <div class="insert note">
+                <span>Note</span>
+                <p>If you are migrating from a CraftBukkit based server (Spigot, Paper, PurPur, etc)
+                    then there are extra steps for transfering your world over. Please read <a
+                        href="https://docs.spongepowered.org/stable/en/server/getting-started/migrating.html">Migrating
+                        to Sponge</a> as it explains the process</p>
+            </div>
+            <h4>System requirements</h4>
+            <p>Sponge has the same system requirements as the vanilla minecraft server. It is however recommended to
+                have more RAM and better single core performace.</p>
+            <div class="insert note">
+                <span>Note</span>
+                <p>It is recommended to use the minimum LTS (Long Term Supported) version java that your version of
+                    minecraft supports where possible as that is also what plugins are designed to target. This is
+                    not a golden rule however and some plugins may require newer versions of Java</p>
+            </div>
+            <div class="insert warning">
+                <span>Warning</span>
+                <p>Sponge may not work on newer versions of Java that were released after it</p>
+            </div>
+            <h3>Getting started</h3>
+            <ol>
+                <li>
+                    Download <a href="https://spongepowered.org/downloads/spongevanilla">Sponge Vanilla</a> on the
+                    chosen
+                    version
+                </li>
+                <li>
+                    Place downloaded SpongeVanilla in empty folder
+                </li>
+                <li>
+                    Run Sponge Vanilla (see below on how to run)
+                </li>
+                <li>
+                    (Optional) Modify server.properies
+                </li>
+                <li>
+                    (Optional) Place sponge plugins into the <span class="special">mods</span> folder
+                </li>
+                <li>
+                    Read and accept the minecraft eula
+                </li>
+                <li>
+                    Run again
+                </li>
+            </ol>
+
+            <h4>How to run</h4>
+            <p>Sponge vanilla does not have a graphical interface for when the server is running, instead that is
+                disabled due to performace. To run SpongeVanilla will depend on your computer, in paticular your
+                operating system. If you don't know your operating system assume it to be Windows</p>
+
+            <h4>How to run on Windows</h4>
+            <p>Windows is actually the simpliest to run, whereby all that is needed is a <span
+                    class="special">run.bat</span> script.</p>
+            <ol>
+                <li>Rename the sponge vanilla file to <span class="special">sponge</span></li>
+                <li>Open <span class="special">notepad</span> application</li>
+                <li>Paste the code below into notepad</li>
+                <li>Save the file into the folder where sponge is with the type as <span class="special">All types
+                        (*.*)</span> and ensure that the name given is <span class="special">run.bat</span></li>
+                <li>To run the server, double click the <span class="special">run</span> file</li>
+            </ol>
+            <div class="insert code"><span>run.bat</span><code>java -jar ./sponge.jar --nogui</code></div>
+
+            <h4>How to run on Mac-os / Linux</h4>
+            <p>The Mac-os and Linux operating systems come with a program called <span class="special">Bash</span> that
+                we will use to launch SpongeVanilla with.</p>
+            <ol>
+                <li>Rename the sponge vanilla file to <span class="special">sponge.jar</span></li>
+                <li>Open <span class="special">TextEdit</span> (Mac), <span class="special">Kate</span> (KDE Linux) or
+                    <span class="special">Text Editor</span> (Gnome Linux) application
+                </li>
+                <li>Paste the code below into the application</li>
+                <li>Save the file into the folder where sponge is with the name <span class="special">run.sh</span></li>
+                <li>Open the <span class="special">Terminal</span> application</li>
+                <li>type <span class="special">cd </span> and then paste in the path to the folder you have your Sponge
+                    file in</li>
+                <li>press the Enter key</li>
+                <li>On Mac-os type <span class="special">chmod +755 run.sh</span> or on Linux type <span
+                        class="special">chmod +x run.sh</span></li>
+                <li>Press the Enter key</li>
+                <li>You can now right click the <span class="special">run.sh</span> file and then select <span
+                        class="special">Run with terminal</span></li>
+            </ol>
+            <div class="insert code"><span>run.sh</span><code>#!/usr/bin/env sh</code><code>
+                java -jar ./sponge.jar --nogui</code></div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="last-updated" class="flex-even">
+            <div>
+                <span><b>For:</b></span>
+                <span>API 7.0.0+</span>
+            </div>
+            <div>
+                <span><b>Last Updated</b></span>
+                <span>08-May-2025</span>
+            </div>
+        </div>
+        <div id="footer" class="flex-even">
+            <div class="credit">
+                <p><b>Credit:</b></p>
+                <p>Sponge is owned and developed by the SpongePowered team</p>
+            </div>
+            <div class="tc">
+                <p>This documentation is unoffical and maybe incorrect. If you wish to refer to correct document
+                    please
+                    visit the offical documentation</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

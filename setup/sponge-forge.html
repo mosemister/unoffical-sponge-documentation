@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Unoffical Documentation</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/sidebar.js"></script>
+</head>
+
+<body onload="onSidebarLoad()">
+    <div id="header" class="flex-even sidebar-yellow">
+        <h1>Unoffical Sponge documentation</h1>
+        <h2>Sponge Forge Setup</h2>
+    </div>
+    <div class="flex full-main-height">
+        <div id="sidebar" class="sidebar-background">
+            <div></div>
+        </div>
+        <div id="main">
+            <h3>Quick start guide</h3>
+            <p>This is a step by step reference on how to create a Minecraft server with Sponge Forge version 8 and
+                above</p>
+            <div class="insert note">
+                <span>Note</span>
+                <p>If you are migrating from a CraftBukkit based server (Spigot, Paper, PurPur, etc)
+                    then there are extra steps for transfering your world over. Please read <a
+                        href="https://docs.spongepowered.org/stable/en/server/getting-started/migrating.html">Migrating
+                        to Sponge</a> as it explains the process</p>
+            </div>
+            <h4>System requirements</h4>
+            <p>Sponge has the same system requirements as the vanilla minecraft server. It is however recommended to
+                have more RAM and better single core performace.</p>
+            <div class="insert note">
+                <span>Note</span>
+                <p>It is recommended to use the minimum LTS (Long Term Supported) version java that your version of
+                    minecraft supports where possible as that is also what plugins are designed to target. This is
+                    not a golden rule however and some plugins may require newer versions of Java</p>
+            </div>
+            <div class="insert warning">
+                <span>Warning</span>
+                <p>Sponge and/or Forge may not work on newer versions of Java that were released after it</p>
+            </div>
+            <h3>Getting started</h3>
+            <ol>
+                <li>Setup <a href="https://docs.minecraftforge.net/latest/gettingstarted">Forge</a></li>
+                <li>
+                    Download <a href="https://spongepowered.org/downloads/spongeforge">Sponge Forge</a> on your
+                    chosen version
+                </li>
+                <li>
+                    Place downloaded SpongeForge in the forge <span class="special">mods</span> folder
+                </li>
+                <li>
+                    Run Forge
+                </li>
+                <li>(Optional) Place sponge plugins within the <span class="special">mods/plugins</span> folder</li>
+            </ol>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="last-updated" class="flex-even">
+            <div>
+                <span><b>For:</b></span>
+                <span>API 8.0.0+</span>
+            </div>
+            <div>
+                <span><b>Last Updated</b></span>
+                <span>08-May-2025</span>
+            </div>
+        </div>
+        <div id="footer" class="flex-even">
+            <div class="credit">
+                <p><b>Credit:</b></p>
+                <p>Sponge is owned and developed by the SpongePowered team</p>
+            </div>
+            <div class="tc">
+                <p>This documentation is unoffical and maybe incorrect. If you wish to refer to correct document
+                    please
+                    visit the offical documentation</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
